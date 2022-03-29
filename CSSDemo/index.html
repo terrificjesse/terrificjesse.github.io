@@ -7,12 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            background-color: green;
-        }
-        
         p {
             color: purple
+        }
+        
+        body {
+            margin-right: 80px;
+            margin-left: 80px;
+        }
+        
+        body {
+            border: 1px solid black;
+            border-collapse: collapse;
         }
         
         #red-text {
@@ -38,55 +44,75 @@
         td {
             border: 1px solid black;
             border-collapse: collapse;
+            text-align: center;
+        }
+        
+        .myDiv {
+            border: 5px black;
+            background-color: lightblue;
+            text-align: center;
+        }
+        
+        .container {
+            width: 1000px;
+            margin: 0px auto;
+            border: 1px solid black;
+            padding: 50px;
+            background-color: white;
         }
     </style>
 </head>
 
 <body>
-    <h1>Some HTML stuff first</h1>
-    <ul>
-        <li>dog</li>
-        <li>cat</li>
-        <li>fish</li>
-    </ul>
-    <!--top movies ordered lists-->
-    <h2>Top Movies</h2>
-    <ol>
-        <li>My Neighbor totoro</li>
-        <li>the half of it</li>
-        <li>inception</li>
-    </ol>
-    <h2>Tables</h2>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>favorite color</th>
-        </tr>
-        <tr>
-            <td>Bob</td>
-            <td>33</td>
-            <td>blue</td>
-        </tr>
-        <tr>
-            <td>Jesse</td>
-            <td>14</td>
-            <td>green</td>
-        </tr>
-    </table>
-    <h2>Let's do some internal css!</h2>
-    <p style="color:blue">I want this text to be blue</p>
-    <p style="color:red">I want this text to be red</p>
-    <p style="font-size:xx-large">I want this text to be really big</p>
-    <p style="font-size:xx-small">I want this to be really small</p>
-    <p style="font: size 24px; color:orange; text-align: center;">I want this to be orange, 24px, and centered</p>
+    <div class="myDiv">
+        <h1>Some HTML stuff first</h1>
+        <ul>
+            <li>dog</li>
+            <li>cat</li>
+            <li>fish</li>
+        </ul>
+        <!--top movies ordered lists-->
+        <h2>Top Movies</h2>
+        <ol>
+            <li>My Neighbor totoro</li>
+            <li>the half of it</li>
+            <li>inception</li>
+        </ol>
+        <h2>Tables</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>favorite color</th>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>33</td>
+                <td>blue</td>
+            </tr>
+            <tr>
+                <td>Jesse</td>
+                <td>14</td>
+                <td>green</td>
+            </tr>
+        </table>
+        <h2>Let's do some internal css!</h2>
+        <p style="color:blue">I want this text to be blue</p>
+        <p style="color:red">I want this text to be red</p>
+        <p style="font-size:xx-large">I want this text to be really big</p>
+        <p style="font-size:xx-small">I want this to be really small</p>
+        <p style="font: size 24px; color:orange; text-align: center;">I want this to be orange, 24px, and centered</p>
 
-    <h2>Let's do some internal css with selectors</h2>
-    <p id="blue-text">make this blue</p>
-    <p id="red-text">make this red</p>
-    <p class="small-text">make this small</p>
-    <p class="small-text">make this small too</p>
-    <p class="orange-center-text">make this orange, 24px, and centered</p>
+        <h2>Let's do some internal css with selectors</h2>
+        <p id="blue-text">make this blue</p>
+        <p id="red-text">make this red</p>
+        <p class="small-text">make this small</p>
+        <p class="small-text">make this small too</p>
+        <p class="orange-center-text">make this orange, 24px, and centered</p>
+    </div>
+    <div class="container">
+
+    </div>
 </body>
 
 </html>
