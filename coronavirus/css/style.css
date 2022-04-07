@@ -1,0 +1,58 @@
+.container {
+    width: 1000px;
+    margin: 0px auto;
+    border: 1px solid black;
+    padding: 50px;
+    background-color: darkgrey;
+}
+
+.navbar {
+    width: 900px;
+    margin: 0px auto;
+    border: 1px solid black;
+    padding: 50px;
+    background-color: white;
+}
+
+body {
+    background-image: url("../images/math_background.jpg");
+    background-color: #cccccc;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #38444d;
+}
+
+li {
+    display: inline-block;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropbtn {
+    background-color: grey;
+}
+
+.center {
+    text-align: center;
+}
+
+.center_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
