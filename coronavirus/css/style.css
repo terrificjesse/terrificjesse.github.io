@@ -56,3 +56,21 @@ li a:hover,
     margin-right: auto;
     width: 25%;
 }
+
+h1 {
+    font-family: ronnia, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: ronnia, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+h2 {
+    font-family: ronnia-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
