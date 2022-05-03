@@ -11,14 +11,14 @@ body {
 .grid-item {
     background-color: gray;
     text-align: center;
-    font-size: 30px;
+    font-size: 15px;
     padding: 20px;
 }
 
 .navmenu {
     grid-column: 1 / span 3;
     grid-row: 1;
-    width: 3000px;
+    width: 1000px;
     margin: 0px auto;
     padding: 50px;
 }
