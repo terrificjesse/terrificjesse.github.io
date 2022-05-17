@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Messaround</title>
+</head>
+
+<body>
+    <h1>Let's learn javascript!</h1>
+    <h2>How do we do onclick evensts and alerts?</h2>
+    <a href="https://www.eastsideprep.org/" target="_blank" onclick="alert('Warning! You are navigating away from my page!')">go to my school's website</a>
+    <a href="https://www.w3schools.com/js/js_intro.asp" target="_blank" onclick="alert('Are you sure you want to leave?')">Javascript intro</a>
+
+    <h2>How do I change HTML content with Javascript?</h2>
+    <h2>What's my secret identity?</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML='nana nana nana, Batman!!!'; document.getElementById('secret').style.display='block'">Reveal!</button>
+    <button onclick="document.getElementById('secret').style. display='none'">Hide!</button>
+    <!--Challeng Number 2-->
+    <h2>Which one is the lie?</h2>
+    <ol>
+        <li>I play the cello</li>
+        <li>I have a dog</li>
+        <li>I like to read</li>
+    </ol>
+
+
+    <p id="secrete"></p>
+    <button onclick="document.getElementById('secrete').innerHTML='2. I have a dog'; document.getElementById('secrete').style.display='block'">Reveal!</button>
+    <button onclick="document.getElementById('secrete').style. display='none'">Hide!</button>
+
+    <h2>How do we change an image with javascript?</h2>
+    <img src="images/pic_bulboff.gif" alt="Bulboff" id="change">
+    <br>
+    <br>
+    <button onclick="document.getElementById('change').src='images/pic_bulbon.gif'">Turn-on light</button>
+    <button onclick="document.getElementById('change').src='images/pic_bulboff.gif'">Turn-off light</button>
+
+    <h2>How do we change css styles with functions</h2>
+
+    <p id="alice">Hi. I am Alice.</p>
+    <button onclick="shrinkAlice()">Cake: Eat me</button>
+    <button onclick="growAlice()">Potion: Drink me</button>
+    <button onclick="NormalAlice()">Normal</button>
+
+    <p id="shadow">Hello</p>
+    <button onclick="GainShadow()">Shadow</button>
+    <button onclick="LoseShadow()">Normal</button>
+
+    <p id="align">Left</p>
+    <button onclick="Left()">Left</button>
+    <button onclick="Center()">Center</button>
+    <button onclick="Right()">Right</button>
+
+    <script>
+        function shrinkAlice() {
+            let aliceParagraph = document.getElementById('alice');
+            aliceParagraph.style.color = 'darkblue'
+            aliceParagraph.style.fontSize = '10px'
+        }
+
+        function growAlice() {
+            let aliceParagraph = document.getElementById('alice')
+            aliceParagraph.style.color = 'red'
+            aliceParagraph.style.fontSize = '100px'
+        }
+
+        function NormalAlice() {
+            let aliceParagraph = document.getElementById('alice')
+            aliceParagraph.style.color = 'black'
+            aliceParagraph.style.fontSize = 'initial'
+        }
+
+        function GainShadow() {
+            let x = document.getElementById('shadow')
+            x.style.color = 'red'
+            x.style.textShadow = '1px 1px green'
+        }
+
+        function LoseShadow() {
+            let x = document.getElementById('shadow')
+            x.style.color = 'initial'
+            x.style.textShadow = 'initial'
+        }
+
+        function Left() {
+            let x = document.getElementById('align')
+            x.style.textAlign = 'left'
+        }
+
+        function Center() {
+            let x = document.getElementById('align')
+            x.style.textAlign = 'center'
+        }
+
+        function Right() {
+            let x = document.getElementById('align')
+            x.style.textAlign = 'right'
+        }
+    </script>
+</body>
+
+</html>
