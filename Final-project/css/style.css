@@ -1,0 +1,20 @@
+.container {
+    width: 1000px;
+    margin: 0px auto;
+    border: 1px solid black;
+    padding: 50px;
+    background-color: black;
+}
+
+.left {
+    text-align: left;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
